@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedAI - Website Speed Analyzer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                50: "#e9fffb",
+                100: "#c9fbf2",
+                200: "#98f4e5",
+                300: "#66edd8",
+                400: "#33e6cb",
+                500: "#14b8a6",
+                600: "#109b8d",
+                700: "#0d7e74",
+              },
+            },
+            boxShadow: {
+              soft: "0 8px 25px rgba(15, 23, 42, 0.08)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-50 font-poppins text-slate-900 antialiased">
+    <div class="mx-auto min-h-screen max-w-7xl px-4 pb-16 pt-6 sm:px-6 lg:px-10">
+      <header class="flex items-center justify-between">
+        <a href="#" class="text-3xl font-extrabold tracking-tight text-teal-600">SpeedAI</a>
+        <button
+          type="button"
+          class="inline-flex items-center gap-2 rounded-xl bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-teal-700 focus:outline-none focus:ring-4 focus:ring-teal-200"
+        >
+          Analyze Now
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+          </svg>
+        </button>
+      </header>
+
+      <main class="mx-auto mt-16 max-w-5xl text-center">
+        <div
+          class="mx-auto inline-flex items-center gap-2 rounded-full border border-teal-100 bg-teal-50 px-4 py-2 text-sm font-semibold text-teal-700"
+        >
+          <span class="h-2 w-2 rounded-full bg-teal-500"></span>
+          Next-Gen Performance Analysis
+        </div>
+
+        <h1 class="mt-6 text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+          Supercharge Your<br />
+          <span class="text-teal-500">Website Speed</span>
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-3xl text-lg text-slate-500">
+          Instantly boost your website’s performance with AI-powered suggestions. Tailored speed
+          scores, actionable insights, and clear technical roadmaps.
+        </p>
+
+        <div class="mx-auto mt-10 flex max-w-3xl flex-col gap-3 sm:flex-row">
+          <div class="relative flex-1">
+            <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-slate-400">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"
+                />
+              </svg>
+            </span>
+            <input
+              type="url"
+              placeholder="Enter your website URL (e.g., example.com)"
+              class="block w-full rounded-xl border border-slate-200 bg-white py-3 pl-11 pr-4 text-[15px] text-slate-700 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-teal-400 focus:ring-4 focus:ring-teal-100"
+            />
+          </div>
+          <button
+            type="button"
+            class="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-600 px-7 py-3 text-base font-semibold text-white shadow-soft transition hover:bg-teal-700 focus:outline-none focus:ring-4 focus:ring-teal-200"
+          >
+            Analyze Now
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-sm text-slate-500">
+          <span class="inline-flex items-center gap-2">
+            <svg class="h-4 w-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4M12 3l8 4v5c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7l8-4Z" />
+            </svg>
+            Real-time Analysis
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <svg class="h-4 w-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v4m0 12v4M4.9 4.9l2.8 2.8m8.6 8.6 2.8 2.8M2 12h4m12 0h4M4.9 19.1l2.8-2.8m8.6-8.6 2.8-2.8" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            AI Suggestions
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <svg class="h-4 w-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 3 4 14h7l-1 7 9-11h-7l1-7Z" />
+            </svg>
+            Fast Reports
+          </span>
+        </div>
+      </main>
+
+      <section class="mx-auto mt-24 grid max-w-6xl gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <article class="rounded-3xl border border-slate-200 bg-white p-7 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-xl bg-teal-50 p-3 text-teal-600">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12M3 12h3m12 0h3M5.64 18.36l2.12-2.12m8.48-8.48 2.12-2.12" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </div>
+          <h3 class="mt-4 text-2xl font-semibold text-teal-700">Performance Score</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Get deep technical metrics like LCP, FCP, and TBT directly from Google PageSpeed
+            Insights.
+          </p>
+        </article>
+
+        <article class="rounded-3xl border border-slate-200 bg-white p-7 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-xl bg-teal-50 p-3 text-teal-600">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m9.5 14.5-2 2a2.8 2.8 0 0 0 4 4l2-2M14.5 9.5l2-2a2.8 2.8 0 1 0-4-4l-2 2" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8 16 8-8" />
+            </svg>
+          </div>
+          <h3 class="mt-4 text-2xl font-semibold text-teal-700">AI Improvements</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Our AI translates complex technical debt into actionable business suggestions.
+          </p>
+        </article>
+
+        <article class="rounded-3xl border border-slate-200 bg-white p-7 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-xl bg-teal-50 p-3 text-teal-600">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M7 12h10M10 17h4" />
+            </svg>
+          </div>
+          <h3 class="mt-4 text-2xl font-semibold text-teal-700">Technical Roadmap</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Step-by-step guidance for images, caching, and layout optimizations.
+          </p>
+        </article>
+
+        <article class="rounded-3xl border border-slate-200 bg-white p-7 text-center shadow-sm">
+          <div class="mx-auto inline-flex rounded-xl bg-teal-50 p-3 text-teal-600">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 19h16M7 16V8m5 8V5m5 11v-6" />
+            </svg>
+          </div>
+          <h3 class="mt-4 text-2xl font-semibold text-teal-700">SEO &amp; Best Practices</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-500">
+            Complete analysis of accessibility and search engine visibility.
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.js"></script>
+  </body>
+</html>
